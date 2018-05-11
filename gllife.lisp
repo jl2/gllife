@@ -142,6 +142,7 @@
                                        (:sdl-gl-doublebuffer 1)))
       (setf (sdl:frame-rate) fps)
       
+      (format t "version: ~a~%" (gl:get-string :version))
       (gl:viewport 0 0 win-width win-height)
       (gl:matrix-mode :projection)
       (gl:load-identity)
